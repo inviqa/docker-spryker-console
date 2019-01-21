@@ -1,4 +1,4 @@
-FROM my127/spryker:7.2-fpm-alpine
+FROM quay.io/inviqa_images/docker-spryker:7.2-fpm-alpine
 
 COPY --from=mhart/alpine-node:8 /usr/bin/node /usr/bin/node
 COPY --from=mhart/alpine-node:8 /usr/local/bin/yarn /usr/local/bin/yarn
